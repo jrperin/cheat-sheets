@@ -1,2 +1,2 @@
-# python_cheat-sheet
+# Python Cheat Sheet by Perin
 Dicas de Python
