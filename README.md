@@ -1,5 +1,6 @@
-# Python Cheat Sheet by Perin
-Dicas de Python
+# Perin's Cheat Sheet Colletion
+
+General tips
 
 
 
