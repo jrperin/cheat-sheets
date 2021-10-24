@@ -67,3 +67,15 @@ awk '!x[$0]++' $OUTPUTFILE1 > $OUTPUTFILE2
 # ./dbus/bus.cc,kTimeout
 
 ```
+
+# SCP
+
+``` bash
+scp -i path_to_private_key deploy.zip user@server_ip:~
+```
+
+# SSH Sudo in Remote Command
+
+``` bash
+ssh -i path_to_private_key -t user@server_ip 'sudo bash -c "mkdir -p /root/mining/ ; cp deploy.zip /root/mining" '
+```
