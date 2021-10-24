@@ -45,7 +45,7 @@ grep --color=none -rFhHoa -f $SCRIPTPATH/patterns.txt --exclude=switches.{cc,h} 
 
 ```
 
-# Removing Duplicates
+## Removing Duplicates
 
 ``` bash
 awk '!x[$0]++' $OUTPUTFILE1 > $OUTPUTFILE2
@@ -68,13 +68,13 @@ awk '!x[$0]++' $OUTPUTFILE1 > $OUTPUTFILE2
 
 ```
 
-# SCP
+## SCP
 
 ``` bash
 scp -i path_to_private_key deploy.zip user@server_ip:~
 ```
 
-# SSH Sudo in Remote Command
+## SSH Sudo in Remote Command
 
 ``` bash
 ssh -i path_to_private_key -t user@server_ip 'sudo bash -c "mkdir -p /root/mining/ ; cp deploy.zip /root/mining" '
