@@ -29,6 +29,14 @@ if [ "$#" -lt "1" ]; then
 fi
 ```
 
+## Convert to Lower Case
+``` bash
+echo "This will recreate all Microservices containers."
+read -p "Continue? Y/[N]: " result
+result="${result:=N}"
+result=$(echo $result | tr '[A-Z]' '[a-z]') # To lowercase
+```
+
 ## Recursive Finder
 ``` bash
 grep --color=none -rFhHoa -f $SCRIPTPATH/patterns.txt --exclude=switches.{cc,h} --exclude-dir=.git ./ | awk -F:  '{print $1 "," $2}'  > $OUTPUTFILE1
