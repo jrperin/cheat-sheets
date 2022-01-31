@@ -31,10 +31,24 @@ fi
 
 ## Convert to Lower Case
 ``` bash
+result="Teste"
+result=$(echo $result | tr '[A-Z]' '[a-z]') # To lowercase
+```
+
+## Read Data From Terminal
+``` bash
 echo "This will recreate all Microservices containers."
 read -p "Continue? Y/[N]: " result
 result="${result:=N}"
 result=$(echo $result | tr '[A-Z]' '[a-z]') # To lowercase
+```
+
+## Check If Directory Exists
+```bash
+DIR="/etc/httpd/"
+if [ -d "$DIR" ]; then
+  echo "Dirctory ${DIR} exists..."
+fi
 ```
 
 ## Recursive Finder
