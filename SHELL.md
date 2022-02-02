@@ -101,3 +101,12 @@ scp -i path_to_private_key deploy.zip user@server_ip:~
 ``` bash
 ssh -i path_to_private_key -t user@server_ip 'sudo bash -c "mkdir -p /root/mining/ ; cp deploy.zip /root/mining" '
 ```
+
+## Replace String
+``` bash
+echo "Welcome To Linuxhint" | tr [:space:] '\n'
+
+echo "Python is a Programming language" | tr -d 'Pyt'
+
+cat portas_ms.txt | grep -e ")" -e "PORT" | xargs -n 3 echo | tr -d ")" | awk '{ print $1";" $3 }'| tr -d "PORT="
+```
