@@ -2,7 +2,7 @@
 
 Tips saved along the way
 
-* [Linux](linux.md)
+* [Linux](LINUX.md)
 
 * [Shell](SHELL.md)
 
