@@ -1,5 +1,37 @@
 # Linux
 
+## 6 Apps Linux que nunca deixei de usar by Diolinux
+
+<https://www.youtube.com/watch?v=19YqeX4PBS0>
+
+1. darktable
+1. Authy
+1. Bitwarden
+1. flameshot
+1. WinFF
+1. Blanket (white noise)
+1. Davinci Resolve (editor de video) <- profissional
+
+
+
+**Verificar:**
+
+<https://www.youtube.com/watch?v=nY4G5f8uJW0>
+
+* Apostrophe (markdown)
+* NewsFlash (feed rss)
+* GnomePhotos
+* Newton Mail
+* Streamio (gestor de mídia)
+* Sweet Home 3D (opensource)
+* Akira UI Design (criar interface)
+* Alacritty (terminal acelerado por GPU)
+* BricsCad (nao é free)
+* Fondo (wall papers)
+* Lightworks (editor de video - nao e free, tem versao gratis)
+* 
+
+
 ## rich
 
 Fabulous command line toolbox for fancy output.
