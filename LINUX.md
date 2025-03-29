@@ -10,15 +10,18 @@ ffmpeg -ss 00:01:00 -to 00:02:00 -i input.mp4 -c copy output.mp4
 # -ss             -> Horário do início
 # -to             -> Horário do fim (considerando o inicio real do arquivo)
 # -c              -> Copy - Recorte via copia de stream (muito rápido)
+```
 
+### Converter image .webp em .png
+
+``` bash
+ffmpeg -i input_file.webp output_file.png
 ```
 
 ### Achar arquivos grandes
 
 ``` bash
-
 du -h 2>/dev/null | egrep -v "\./.+/" | sort -h | tail -n 10
-
 ```
 
 ### Achar e apagar diretórios pelo nome
@@ -33,7 +36,6 @@ BASE_DIR="."
 find "$BASE_DIR" -type d -name "venv" -exec rm -rf {} +
 
 echo "Todos os diretorios 'venv' foram removidos"
-
 ```
 
 ### Achar e apagar arquivos pelo nome
@@ -48,7 +50,6 @@ BASE_DIR="."
 find "$BASE_DIR" -type f -name ".DS_Store" -exec rm -rf {} +
 
 echo "Todos os arquivos '.DS_Store' foram removidos"
-
 ```
 
 ---
