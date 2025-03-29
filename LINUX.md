@@ -1,6 +1,61 @@
 # Linux
 
-## 6 Apps Linux que nunca deixei de usar by Diolinux
+## Comandos Úteis
+
+### Recortar vídeos
+``` bash
+ffmpeg -ss 00:01:00 -to 00:02:00 -i input.mp4 -c copy output.mp4
+
+# Formato da hora -> hh:mm:ss
+# -ss             -> Horário do início
+# -to             -> Horário do fim (considerando o inicio real do arquivo)
+# -c              -> Copy - Recorte via copia de stream (muito rápido)
+
+```
+
+### Achar arquivos grandes
+
+``` bash
+
+du -h 2>/dev/null | egrep -v "\./.+/" | sort -h | tail -n 10
+
+```
+
+### Achar e apagar diretórios pelo nome
+
+``` shell
+#!/bin/bash
+
+# Define o diretorio base para iniciar a busca
+BASE_DIR="."
+
+# Encontra e remove todos os diretorios com o nome "venv"
+find "$BASE_DIR" -type d -name "venv" -exec rm -rf {} +
+
+echo "Todos os diretorios 'venv' foram removidos"
+
+```
+
+### Achar e apagar arquivos pelo nome
+
+``` shell
+#!/bin/bash
+
+# Define o diretorio base para iniciar a busca
+BASE_DIR="."
+
+# Encontra e remove todos os diretorios com o nome "venv"
+find "$BASE_DIR" -type f -name ".DS_Store" -exec rm -rf {} +
+
+echo "Todos os arquivos '.DS_Store' foram removidos"
+
+```
+
+---
+
+## Preparação de Ambiente
+
+### 6 Apps Linux que nunca deixei de usar by Diolinux
 
 <https://www.youtube.com/watch?v=19YqeX4PBS0>
 
@@ -32,7 +87,7 @@
 * 
 
 
-## rich
+### rich
 
 Fabulous command line toolbox for fancy output.
 <https://github.com/Textualize/rich-cli>
@@ -43,7 +98,7 @@ pip install rich-cli
 rich README.md -m --pager
 ```
 
-## ritchie-cli
+### ritchie-cli
 ``` bash
 rit create formula
 rit build formula
@@ -57,7 +112,7 @@ rit list credential
 * `src/main.*`  <== Value Extractor
 * `src/pkg/formula.*` <== Run
 
-## Inport Nerd Fonts
+### Inport Nerd Fonts
 
 <https://www.nerdfonts.com/font-downloads>
 
