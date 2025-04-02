@@ -52,6 +52,15 @@ find "$BASE_DIR" -type f -name ".DS_Store" -exec rm -rf {} +
 echo "Todos os arquivos '.DS_Store' foram removidos"
 ```
 
+### Acertar Tmux p/ carregar ~/.bashrc
+
+Editar o arquivo `~/.tmux.conf`
+
+``` bash
+set -g default-terminal "xterm-256color"
+set-option -g default-command bash
+```
+
 ---
 
 ## Preparação de Ambiente
@@ -85,33 +94,7 @@ echo "Todos os arquivos '.DS_Store' foram removidos"
 * BricsCad (nao é free)
 * Fondo (wall papers)
 * Lightworks (editor de video - nao e free, tem versao gratis)
-* 
 
-
-### rich
-
-Fabulous command line toolbox for fancy output.
-<https://github.com/Textualize/rich-cli>
-
-``` bash
-pip install rich-cli
-
-rich README.md -m --pager
-```
-
-### ritchie-cli
-``` bash
-rit create formula
-rit build formula
-rit build formula --watch
-rit publish repo
-rit set credential
-rit list credential
-```
-**Main files:**
-* `config.json` <== Input Values
-* `src/main.*`  <== Value Extractor
-* `src/pkg/formula.*` <== Run
 
 ### Inport Nerd Fonts
 
