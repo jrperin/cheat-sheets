@@ -9,3 +9,5 @@ Tips saved along the way
 * [Python](PYTHON.md)
 
 * [DJango](DJANGO.md)
+
+* [Rede](rede.md)
