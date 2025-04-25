@@ -10,4 +10,6 @@ Tips saved along the way
 
 * [DJango](DJANGO.md)
 
-* [Rede](rede.md)
+* [Redes](Redes.md)
+
+* [Podman](Podman.md)
