@@ -96,7 +96,7 @@ set-option -g default-command bash
 * Lightworks (editor de video - nao e free, tem versao gratis)
 
 
-### Inport Nerd Fonts
+### Import Nerd Fonts
 
 <https://www.nerdfonts.com/font-downloads>
 
